@@ -1,0 +1,6 @@
+services:
+  resource-agent:
+    image: tp-jade
+    # Ne pas mettre container_name pour pouvoir scaler
+    ports:
+      - "0:8080"  # Docker choisira un port libre automatiquement
